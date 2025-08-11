@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Pearls</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Add this RIGHT AFTER opening <body> tag, BEFORE everything else -->
+    <div class="luxury-loader" id="luxuryLoader">
+        <div class="loader-container">
+            <!-- Animated Background -->
+            <div class="loader-bg">
+                <div class="floating-star star-1">✦</div>
+                <div class="floating-star star-2">✧</div>
+                <div class="floating-star star-3">✦</div>
+                <div class="floating-star star-4">✧</div>
+                <div class="floating-star star-5">✦</div>
+            </div>
+
+            <!-- Main Logo/Icon -->
+            <div class="loader-logo">
+                <div class="logo-circle">
+                    <i class="fas fa-star-and-crescent"></i>
+                </div>
+                <div class="logo-rings">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                </div>
+            </div>
+
+            <!-- Loading Text -->
+            <div class="loading-text">
+                <h2 class="main-loading-text" id="loadingText">Islamic Pearls</h2>
+                <p class="sub-loading-text" id="subLoadingText">Preparing your spiritual journey...</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-percentage" id="progressPercentage">0%</div>
+            </div>
+
+            <!-- Loading Dots -->
+            <div class="loading-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <!-- Islamic Quote -->
+            <div class="islamic-quote">
+                <div class="arabic-quote" id="arabicQuote">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <div class="quote-translation" id="quoteTranslation">In the name of Allah, the Most Gracious, the Most
+                    Merciful</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Luxury Navigation -->
+    <nav class="luxury-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-crescent-moon"></i>
+                <span>Islamic Pearls</span>
+            </div>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#mood" class="nav-link" data-section="mood">
+                    <i class="fas fa-brain"></i>
+
+                    <span>Reflects Your Feeling</span>
+                </a>
+            </div>
+
+            <div class="language-selector">
+                <div class="language-dropdown">
+                    <button class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-menu" id="languageMenu">
+                        <div class="language-option" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="ur">
+                            <span class="flag">🇵🇰</span>
+                            <span>اردو</span>
+                        </div>
+                        <div class="language-option" data-lang="ar">
+                            <span class="flag">🇸🇦</span>
+                            <span>العربية</span>
+                        </div>
+                        <div class="language-option" data-lang="bn">
+                            <span class="flag">🇧🇩</span>
+                            <span>বাংলা</span>
+                        </div>
+
+                        <div class="language-option" data-lang="hi">
+                            <span class="flag">🇮🇳</span>
+                            <span>हिंदी</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="luxury-container">
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="floating-orb orb-4"></div>
+        </div>
+
+        <!-- Home Section -->
+        <div class="section active" id="homeSection">
+            <div class="premium-section">
+                <div class="luxury-header">
+                    <div class="header-ornament">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <h1 class="luxury-title">
+                        <span class="title-line-1">Discover Your</span>
+                        <span class="title-line-2">Spiritual Journey</span>
+                    </h1>
+                    <div class="subtitle-container">
+                        <div class="subtitle-line"></div>
+                        <p class="luxury-subtitle" data-text="explore-islamic-wisdom">Explore Islamic Wisdom</p>
+                        <div class="subtitle-line"></div>
+                    </div>
+                </div>
+
+                <div class="luxury-grid">
+                    <div class="luxury-card" data-category="prophets" data-type="stories">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-scroll"></i>
+                            </div>
+                            <h3 data-text="prophet-stories">Story Of Prophets</h3>
+                            <p data-text="prophet-stories-desc">All the Prophet stories given below are from the Quran
+                                and Hadiths.</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card" data-category="prophets" data-type="wisdom">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 data-text="prophetic-wisdom">Prophetic Wisdom</h3>
+                            <p data-text="prophetic-wisdom-desc">Timeless guidance and teachings</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card" data-category="mood" data-type="spiritual">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-pray"></i>
+                            </div>
+                            <h3 data-text="salah-guide">Correct Your Salah</h3>
+                            <p data-text="salah-guide-desc">Complete guide to Islamic prayers with detailed methods, duas, surahs, and benefits in multiple languages.</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card" data-category="mood" data-type="reflection">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-praying-hands"></i>
+                            </div>
+                            <h3 data-text="daily-reflection">Daily Reflection</h3>
+                            <p data-text="daily-reflection-desc">Moments of contemplation and prayer</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card" data-category="quran" data-type="verses">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3 data-text="quran-verses">Quran Verses</h3>
+                            <p data-text="quran-verses-desc">Sacred verses for guidance</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="luxury-card" data-category="quran" data-type="daily">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-mosque" style="margin-left: 5px;"></i>
+                            </div>
+                            <h3 data-text="daily-ayah">Prayer Time</h3>
+                            <p data-text="daily-ayah-desc">Pause the world — it's time to connect with the Creator
+                                through prayer.</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                    <div class="luxury-card" data-category="stories" data-type="inspiration">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="feeling-icon">
+                                <i class="fas fa-book-open" style="margin-left: 5px;"></i>
+                            </div>
+                            <h3 data-text="islamic-stories">Islamic Stories</h3>
+                            <p data-text="islamic-stories-desc">Timeless tales that inspire faith, patience, and purpose
+                                from the lives of prophets and believers.</p>
+                            <div class="card-accent"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mood Section -->
+        <!-- Replace your existing mood section with this -->
+        <div class="section" id="moodSection">
+            <div class="premium-section">
+                <div class="luxury-header">
+                    <div class="header-ornament">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h1 class="luxury-title">
+                        <span class="title-line-1">How are you</span>
+                        <span class="title-line-2">feeling today?</span>
+                    </h1>
+                    <div class="subtitle-container">
+                        <div class="subtitle-line"></div>
+                        <p class="luxury-subtitle" data-text="discover-inner-essence">Discover your inner essence</p>
+                        <div class="subtitle-line"></div>
+                    </div>
+                </div>
+
+                <div class="compact-mood-grid">
+                    <!-- Row 1 -->
+                    <div class="compact-mood-card" data-feeling="angry" data-color="#FF6B6B">
+                        <span>Angry</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="anxious" data-color="#74B9FF">
+                        <span>Anxious</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="bored" data-color="#A29BFE">
+                        <span>Bored</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="confident" data-color="#00CEC9">
+                        <span>Confident</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="confused" data-color="#FDCB6E">
+                        <span>Confused</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="compact-mood-card" data-feeling="content" data-color="#FD79A8">
+                        <span>Content</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="depressed" data-color="#E17055">
+                        <span>Depressed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="doubtful" data-color="#DDA0DD">
+                        <span>Doubtful</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="excited" data-color="#FF7675">
+                        <span>Excited</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="frustrated" data-color="#E84393">
+                        <span>Frustrated</span>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="compact-mood-card" data-feeling="grateful" data-color="#81ECEC">
+                        <span>Grateful</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="greedy" data-color="#GRAY">
+                        <span>Greedy</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="guilty" data-color="#A8E6CF">
+                        <span>Guilty</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="happy" data-color="#F7DC6F">
+                        <span>Happy</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="hopeful" data-color="#85C1E9">
+                        <span>Hopeful</span>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="compact-mood-card" data-feeling="hurt" data-color="#F1948A">
+                        <span>Hurt</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="hypocritical" data-color="#D7BDE2">
+                        <span>Hypocritical</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="indecisive" data-color="#FAD7A0">
+                        <span>Indecisive</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="jealous" data-color="#AED6F1">
+                        <span>Jealous</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="joyful" data-color="#ABEBC6">
+                        <span>Joyful</span>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="compact-mood-card" data-feeling="lazy" data-color="#D5DBDB">
+                        <span>Lazy</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="lonely" data-color="#A3E4D7">
+                        <span>Lonely</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="loved" data-color="#F8C471">
+                        <span>Loved</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="nostalgic" data-color="#BB8FCE">
+                        <span>Nostalgic</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="optimistic" data-color="#82E0AA">
+                        <span>Optimistic</span>
+                    </div>
+
+                    <!-- Row 6 -->
+                    <div class="compact-mood-card" data-feeling="overwhelmed" data-color="#F4B37D">
+                        <span>Overwhelmed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="peaceful" data-color="#7FB3D3">
+                        <span>Peaceful</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="proud" data-color="#C39BD3">
+                        <span>Proud</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="regretful" data-color="#F5B7B1">
+                        <span>Regretful</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="relaxed" data-color="#A9DFBF">
+                        <span>Relaxed</span>
+                    </div>
+
+                    <!-- Row 7 -->
+                    <div class="compact-mood-card" data-feeling="sad" data-color="#85C1E9">
+                        <span>Sad</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="scared" data-color="#D7BDE2">
+                        <span>Scared</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="stressed" data-color="#F8D7DA">
+                        <span>Stressed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="surprised" data-color="#FCF4A3">
+                        <span>Surprised</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="thankful" data-color="#B8E6B8">
+                        <span>Thankful</span>
+                    </div>
+
+                    <!-- Row 8 -->
+                    <div class="compact-mood-card" data-feeling="tired" data-color="#E8DAEF">
+                        <span>Tired</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="uncertain" data-color="#FADBD8">
+                        <span>Uncertain</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="worried" data-color="#D6EAF8">
+                        <span>Worried</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="motivated" data-color="#D5F4E6">
+                        <span>Motivated</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="inspired" data-color="#FFF2CC">
+                        <span>Inspired</span>
+                    </div>
+
+                    <!-- Row 9 -->
+                    <div class="compact-mood-card" data-feeling="embarrassed" data-color="#FFCCCB">
+                        <span>Embarrassed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="disappointed" data-color="#E6E6FA">
+                        <span>Disappointed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="curious" data-color="#E0FFFF">
+                        <span>Curious</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="creative" data-color="#F0E68C">
+                        <span>Creative</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="energetic" data-color="#FFE4B5">
+                        <span>Energetic</span>
+                    </div>
+
+                    <!-- Row 10 -->
+                    <div class="compact-mood-card" data-feeling="focused" data-color="#E0E0E0">
+                        <span>Focused</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="determined" data-color="#D8BFD8">
+                        <span>Determined</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="annoyed" data-color="#FFB6C1">
+                        <span>Annoyed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="blessed" data-color="#F0FFF0">
+                        <span>Blessed</span>
+                    </div>
+                    <div class="compact-mood-card" data-feeling="spiritual" data-color="#E6E6FA">
+                        <span>Spiritual</span>
+                    </div>
+                </div>
+
+                <div class="luxury-result" id="luxuryResult">
+                    <div class="result-ornament">
+                        <div class="ornament-line"></div>
+                        <i class="fas fa-gem"></i>
+                        <div class="ornament-line"></div>
+                    </div>
+                    <h2 class="result-title">Your spiritual state is <span id="resultText">awaiting discovery</span>
+                    </h2>
+                    <p class="result-description" id="resultDescription">Select your current mood to receive
+                        personalized Islamic guidance</p>
+                    <button class="luxury-btn" id="luxuryBtn" style="display: none;">
+                        <span class="btn-text" data-text="explore-guidance">Explore Guidance</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add this AFTER the moodSection div -->
+        <div class="section" id="moodDetailSection">
+            <div class="mood-detail-container">
+                <!-- Back Button -->
+                <button class="back-btn" id="backToMoods">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Moods</span>
+                </button>
+
+                <!-- Mood Header -->
+                <div class="mood-detail-header">
+                    <div class="mood-icon" id="moodIcon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h1 class="mood-title" id="moodTitle">Confident</h1>
+                    <p class="mood-subtitle" id="moodSubtitle">Building inner strength through faith</p>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="mood-content-grid">
+
+                    <!-- Quran Section -->
+                    <div class="content-card quran-card">
+                        <div class="card-header">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Quran Ayah</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="arabic-text" id="arabicVerse">
+                                وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ
+                            </div>
+                            <div class="translation" id="verseTranslation">
+                                "And whoever relies upon Allah - then He is sufficient for him."
+                            </div>
+                            <div class="reference" id="verseReference">
+                                - Quran 65:3
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hadith Section -->
+                    <div class="content-card hadith-card">
+                        <div class="card-header">
+                            <i class="fas fa-quote-left"></i>
+                            <h3>Hadith</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="hadith-text" id="hadithText">
+                                "The believer is not one who eats his fill while his neighbor goes hungry."
+                            </div>
+                            <div class="hadith-source" id="hadithSource">
+                                - Prophet Muhammad (PBUH), Sahih Bukhari
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dua Section -->
+                    <div class="content-card dua-card">
+                        <div class="card-header">
+                            <i class="fas fa-praying-hands"></i>
+                            <h3>Dua</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="arabic-text" id="duaArabic">
+                                رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي
+                            </div>
+                            <div class="translation" id="duaTranslation">
+                                "My Lord, expand for me my breast and ease for me my task."
+                            </div>
+                            <div class="dua-benefit" id="duaBenefit">
+                                Recite this dua to gain confidence and ease in difficult situations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advice Section -->
+                    <div class="content-card advice-card">
+                        <div class="card-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Islamic Advice</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="advice-list" id="adviceList">
+                                <div class="advice-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Trust in Allah's plan and timing</span>
+                                </div>
+                                <div class="advice-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Remember your past successes</span>
+                                </div>
+                                <div class="advice-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Seek guidance through prayer</span>
+                                </div>
+                                <div class="advice-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Surround yourself with positive believers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YouTube Video Section -->
+                    <div class="content-card video-card">
+                        <div class="card-header">
+                            <i class="fab fa-youtube"></i>
+                            <h3>Watch & Learn</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="video-placeholder" id="videoContainer">
+                                <div class="video-thumbnail">
+                                    <i class="fab fa-youtube"></i>
+                                    <p>Video will be loaded here</p>
+                                    <span>Duration: 10:30</span>
+                                </div>
+                                <iframe id="youtubeVideo" width="100%" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                                    picture-in-picture" allowfullscreen style="display: none;">
+                                    <!-- Hidden by default -->
+                                </iframe>
+                                <iframe id="youtubeVideo" width="100%" height="315" src="" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen style="display: none;">
+                                </iframe>
+                            </div>
+                            <div class="video-info">
+                                <h4 id="videoTitle">Building Confidence Through Faith</h4>
+                                <p id="videoDescription">Learn how Islamic teachings can help build unshakeable
+                                    confidence...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment Section -->
+                    <div class="content-card comment-card full-width">
+                        <div class="card-header">
+                            <i class="fas fa-comments"></i>
+                            <h3>Share Your Thoughts</h3>
+                            <span class="comment-count" id="commentCount">3 Comments</span>
+                        </div>
+                        <div class="card-content">
+                            <!-- Comment Form -->
+                            <div class="comment-form">
+                                <div class="user-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="comment-input-area">
+                                    <textarea id="commentInput" placeholder="Share your experience or ask a question..."
+                                        rows="3"></textarea>
+                                    <div class="comment-actions">
+                                        <button class="post-comment-btn" id="postComment">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Post Comment
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comments List -->
+                            <div class="comments-list" id="commentsList">
+                                <div class="comment-item">
+                                    <div class="user-avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <span class="username">Ahmad Ali</span>
+                                            <span class="comment-time">2 hours ago</span>
+                                        </div>
+                                        <p class="comment-text">This really helped me during a difficult time.
+                                            JazakAllah khair!</p>
+                                        <div class="comment-actions">
+                                            <button class="like-btn">
+                                                <i class="fas fa-heart"></i>
+                                                <span>5</span>
+                                            </button>
+                                            <button class="reply-btn">
+                                                <i class="fas fa-reply"></i>
+                                                Reply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="user-avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <span class="username">Fatima Khan</span>
+                                            <span class="comment-time">5 hours ago</span>
+                                        </div>
+                                        <p class="comment-text">Beautiful explanation. May Allah strengthen us all.</p>
+                                        <div class="comment-actions">
+                                            <button class="like-btn">
+                                                <i class="fas fa-heart"></i>
+                                                <span>12</span>
+                                            </button>
+                                            <button class="reply-btn">
+                                                <i class="fas fa-reply"></i>
+                                                Reply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment-item">
+                                    <div class="user-avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="comment-content">
+                                        <div class="comment-header">
+                                            <span class="username">Omar Ibrahim</span>
+                                            <span class="comment-time">1 day ago</span>
+                                        </div>
+                                        <p class="comment-text">Subhanallah! The Quran verse really touched my heart.
+                                        </p>
+                                        <div class="comment-actions">
+                                            <button class="like-btn active">
+                                                <i class="fas fa-heart"></i>
+                                                <span>8</span>
+                                            </button>
+                                            <button class="reply-btn">
+                                                <i class="fas fa-reply"></i>
+                                                Reply
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="load-more-btn" id="loadMoreComments">
+                                <i class="fas fa-chevron-down"></i>
+                                Load More Comments
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add this AFTER your existing moodDetailSection -->
+        <div class="section" id="prophetsSection">
+            <div class="premium-section">
+                <!-- Back Button -->
+                <button class="back-btn" id="backToHome">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Home</span>
+                </button>
+
+                <div class="luxury-header">
+                    <div class="header-ornament">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h1 class="luxury-title">
+                        <span class="title-line-1">Stories of</span>
+                        <span class="title-line-2">Prophets</span>
+                    </h1>
+                    <div class="subtitle-container">
+                        <div class="subtitle-line"></div>
+                        <p class="luxury-subtitle">Learn from the lives of Allah's messengers</p>
+                        <div class="subtitle-line"></div>
+                    </div>
+                </div>
+
+                <div class="compact-prophets-grid">
+                    <!-- Row 1 - Most Popular Prophets -->
+                    <div class="compact-prophet-card" data-prophet="muhammad" data-color="#00B04F">
+                        <span>Muhammad (SAW)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="ibrahim" data-color="#FFD700">
+                        <span>Ibrahim (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="musa" data-color="#4169E1">
+                        <span>Musa (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="isa" data-color="#87CEEB">
+                        <span>Isa (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="nuh" data-color="#20B2AA">
+                        <span>Nuh (AS)</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="compact-prophet-card" data-prophet="adam" data-color="#DEB887">
+                        <span>Adam (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="yusuf" data-color="#FF6347">
+                        <span>Yusuf (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="dawud" data-color="#9370DB">
+                        <span>Dawud (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="sulaiman" data-color="#32CD32">
+                        <span>Sulaiman (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="yunus" data-color="#FF1493">
+                        <span>Yunus (AS)</span>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="compact-prophet-card" data-prophet="idris" data-color="#8FBC8F">
+                        <span>Idris (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="ismail" data-color="#F0E68C">
+                        <span>Ismail (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="ishaq" data-color="#DDA0DD">
+                        <span>Ishaq (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="yaqub" data-color="#98FB98">
+                        <span>Yaqub (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="lut" data-color="#F5DEB3">
+                        <span>Lut (AS)</span>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="compact-prophet-card" data-prophet="harun" data-color="#FFB6C1">
+                        <span>Harun (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="zakariyya" data-color="#AFEEEE">
+                        <span>Zakariyya (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="yahya" data-color="#D3D3D3">
+                        <span>Yahya (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="ilyas" data-color="#FFA07A">
+                        <span>Ilyas (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="alyasa" data-color="#F0F8FF">
+                        <span>Al-Yasa (AS)</span>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="compact-prophet-card" data-prophet="hud" data-color="#E6E6FA">
+                        <span>Hud (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="saleh" data-color="#FFEFD5">
+                        <span>Saleh (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="shuayb" data-color="#FFE4E1">
+                        <span>Shu'ayb (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="ayub" data-color="#F5F5DC">
+                        <span>Ayub (AS)</span>
+                    </div>
+                    <div class="compact-prophet-card" data-prophet="dhulkifl" data-color="#E0FFFF">
+                        <span>Dhul-Kifl (AS)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prophet Detail Section -->
+        <div class="section" id="prophetDetailSection">
+            <div class="prophet-detail-container">
+                <!-- Back Button -->
+                <button class="back-btn" id="backToProphets">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Prophets</span>
+                </button>
+
+                <!-- Prophet Header -->
+                <div class="prophet-detail-header">
+                    <div class="prophet-icon" id="prophetIcon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h1 class="prophet-title" id="prophetTitle">Muhammad (SAW)</h1>
+                    <p class="prophet-subtitle" id="prophetSubtitle">The Final Messenger of Allah</p>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="prophet-content-grid">
+                    <!-- Story Section -->
+                    <div class="content-card story-card">
+                        <div class="card-header">
+                            <i class="fas fa-book-open"></i>
+                            <h3>Prophet's Story</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="story-text" id="prophetStory">
+                                The life story and key events of this blessed prophet will be displayed here...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lessons Section -->
+                    <div class="content-card lessons-card">
+                        <div class="card-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Key Lessons</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="lessons-list" id="prophetLessons">
+                                <div class="lesson-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Key lessons from this prophet's life</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quran References -->
+                    <div class="content-card quran-card">
+                        <div class="card-header">
+                            <i class="fas fa-book"></i>
+                            <h3>Quranic References</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="arabic-text" id="prophetArabic">
+                                وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ
+                            </div>
+                            <div class="translation" id="prophetTranslation">
+                                "And We sent you not, [O Muhammad], except as a mercy to the worlds."
+                            </div>
+                            <div class="reference" id="prophetReference">
+                                - Quran 21:107
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Section -->
+                    <div class="content-card timeline-card">
+                        <div class="card-header">
+                            <i class="fas fa-clock"></i>
+                            <h3>Important Events</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="timeline-list" id="prophetTimeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">Year</div>
+                                    <div class="timeline-event">Important event in prophet's life</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YouTube Video Section -->
+                    <div class="content-card video-card">
+                        <div class="card-header">
+                            <i class="fab fa-youtube"></i>
+                            <h3>Watch & Learn</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="video-placeholder" id="prophetVideoContainer">
+                                <div class="video-thumbnail">
+                                    <i class="fab fa-youtube"></i>
+                                    <p>Prophet's story video will be loaded here</p>
+                                </div>
+                                <iframe id="prophetYoutubeVideo" width="100%" height="315" src="" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen style="display: none;">
+                                </iframe>
+                            </div>
+                            <div class="video-info">
+                                <h4 id="prophetVideoTitle">Story of Prophet Muhammad (SAW)</h4>
+                                <p id="prophetVideoDescription">Learn about the life and teachings of the final
+                                    messenger...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment Section -->
+                    <div class="content-card comment-card full-width">
+                        <div class="card-header">
+                            <i class="fas fa-comments"></i>
+                            <h3>Share Your Thoughts</h3>
+                            <span class="comment-count" id="prophetCommentCount">0 Comments</span>
+                        </div>
+                        <div class="card-content">
+                            <!-- Comment Form -->
+                            <div class="comment-form">
+                                <div class="user-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="comment-input-area">
+                                    <textarea id="prophetCommentInput"
+                                        placeholder="Share what you learned from this prophet's story..."
+                                        rows="3"></textarea>
+                                    <div class="comment-actions">
+                                        <button class="post-comment-btn" id="postProphetComment">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Post Comment
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comments List -->
+                            <div class="comments-list" id="prophetCommentsList">
+                                <!-- Comments will be displayed here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add this AFTER your prophetDetailSection -->
+
+        <!-- Prophetic Wisdom Section -->
+        <div class="section" id="wisdomSection">
+            <div class="premium-section">
+                <!-- Back Button -->
+                <button class="back-btn" id="backToHomeFromWisdom">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Home</span>
+                </button>
+
+                <div class="luxury-header">
+                    <div class="header-ornament">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h1 class="luxury-title">
+                        <span class="title-line-1">Prophetic</span>
+                        <span class="title-line-2">Wisdom</span>
+                    </h1>
+                    <div class="subtitle-container">
+                        <div class="subtitle-line"></div>
+                        <p class="luxury-subtitle">Timeless guidance and teachings</p>
+                        <div class="subtitle-line"></div>
+                    </div>
+                </div>
+
+                <div class="compact-wisdom-grid">
+                    <!-- Row 1 - Most Popular Prophets -->
+                    <div class="compact-wisdom-card" data-prophet="muhammad" data-color="#00B04F">
+                        <span>Muhammad (SAW)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="ibrahim" data-color="#FFD700">
+                        <span>Ibrahim (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="musa" data-color="#4169E1">
+                        <span>Musa (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="isa" data-color="#87CEEB">
+                        <span>Isa (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="nuh" data-color="#20B2AA">
+                        <span>Nuh (AS)</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="compact-wisdom-card" data-prophet="adam" data-color="#DEB887">
+                        <span>Adam (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="yusuf" data-color="#FF6347">
+                        <span>Yusuf (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="dawud" data-color="#9370DB">
+                        <span>Dawud (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="sulaiman" data-color="#32CD32">
+                        <span>Sulaiman (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="yunus" data-color="#FF1493">
+                        <span>Yunus (AS)</span>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="compact-wisdom-card" data-prophet="idris" data-color="#8FBC8F">
+                        <span>Idris (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="ismail" data-color="#F0E68C">
+                        <span>Ismail (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="ishaq" data-color="#DDA0DD">
+                        <span>Ishaq (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="yaqub" data-color="#98FB98">
+                        <span>Yaqub (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="lut" data-color="#F5DEB3">
+                        <span>Lut (AS)</span>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="compact-wisdom-card" data-prophet="harun" data-color="#FFB6C1">
+                        <span>Harun (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="zakariyya" data-color="#AFEEEE">
+                        <span>Zakariyya (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="yahya" data-color="#D3D3D3">
+                        <span>Yahya (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="ilyas" data-color="#FFA07A">
+                        <span>Ilyas (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="alyasa" data-color="#F0F8FF">
+                        <span>Al-Yasa (AS)</span>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="compact-wisdom-card" data-prophet="hud" data-color="#E6E6FA">
+                        <span>Hud (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="saleh" data-color="#FFEFD5">
+                        <span>Saleh (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="shuayb" data-color="#FFE4E1">
+                        <span>Shu'ayb (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="ayub" data-color="#F5F5DC">
+                        <span>Ayub (AS)</span>
+                    </div>
+                    <div class="compact-wisdom-card" data-prophet="dhulkifl" data-color="#E0FFFF">
+                        <span>Dhul-Kifl (AS)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wisdom Detail Section -->
+        <div class="section" id="wisdomDetailSection">
+            <div class="wisdom-detail-container">
+                <!-- Back Button -->
+                <button class="back-btn" id="backToWisdom">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Wisdom</span>
+                </button>
+
+                <!-- Wisdom Header -->
+                <div class="wisdom-detail-header">
+                    <div class="wisdom-icon" id="wisdomIcon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h1 class="wisdom-title" id="wisdomTitle">Wisdom of Muhammad (SAW)</h1>
+                    <p class="wisdom-subtitle" id="wisdomSubtitle">Timeless guidance for everyday life</p>
+                </div>
+
+                <!-- Content Grid -->
+                <div class="wisdom-content-grid">
+                    <!-- Introduction Section -->
+                    <div class="content-card intro-card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h3>Introduction</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="intro-text" id="wisdomIntro">
+                                Short description of the Prophet's wisdom in everyday life...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Teachings Section -->
+                    <div class="content-card teachings-card">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Key Teachings</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="teachings-list" id="keyTeachings">
+                                <div class="teaching-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Timeless advice applicable to modern situations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hadith References -->
+                    <div class="content-card hadith-card">
+                        <div class="card-header">
+                            <i class="fas fa-quote-left"></i>
+                            <h3>Hadith References</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="hadith-text" id="wisdomHadith">
+                                "Authentic hadith with source will be displayed here..."
+                            </div>
+                            <div class="hadith-source" id="wisdomHadithSource">
+                                - Prophet Muhammad (PBUH), Source Reference
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Practical Tips Section -->
+                    <div class="content-card tips-card">
+                        <div class="card-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Practical Tips</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="tips-list" id="practicalTips">
+                                <div class="tip-item">
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>How to implement this wisdom today</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infographic Section -->
+                    <div class="content-card infographic-card">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Visual Guide</h3>
+                </div>
+                <div class="card-content">
+                    <div class="infographic-container" id="prophetInfographicContainer">
+                        <div class="infographic-selector">
+                            <label for="prophetInfographicType">Choose Infographic:</label>
+                            <select id="prophetInfographicType">
+                                <option value="journey">Prophet's Journey</option>
+                                <option value="lessons">Key Lessons</option>
+                                <option value="timeline">Life Timeline</option>
+                                <option value="teachings">Core Teachings</option>
+                                <option value="legacy">Legacy & Impact</option>
+                            </select>
+                        </div>
+                        <div class="infographic-display" id="prophetInfographicDisplay">
+                            <!-- Default infographic content -->
+                            <div class="infographic-item active" data-type="journey">
+                                <div class="infographic-visual journey-visual">
+                                    <div class="journey-steps">
+                                        <div class="journey-step">
+                                            <div class="step-icon"><i class="fas fa-baby"></i></div>
+                                            <div class="step-title">Birth</div>
+                                            <div class="step-desc">Born by Allah's plan</div>
+                                        </div>
+                                        <div class="journey-step">
+                                            <div class="step-icon"><i class="fas fa-book"></i></div>
+                                            <div class="step-title">Prophethood</div>
+                                            <div class="step-desc">Received divine message</div>
+                                        </div>
+                                        <div class="journey-step">
+                                            <div class="step-icon"><i class="fas fa-users"></i></div>
+                                            <div class="step-title">Mission</div>
+                                            <div class="step-desc">Called people to truth</div>
+                                        </div>
+                                        <div class="journey-step">
+                                            <div class="step-icon"><i class="fas fa-star"></i></div>
+                                            <div class="step-title">Legacy</div>
+                                            <div class="step-desc">Eternal guidance</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="infographic-item" data-type="lessons">
+                                <div class="infographic-visual lessons-visual">
+                                    <div class="lessons-pyramid">
+                                        <div class="pyramid-level level-1">
+                                            <span>Trust in Allah</span>
+                                        </div>
+                                        <div class="pyramid-level level-2">
+                                            <span>Patience & Perseverance</span>
+                                        </div>
+                                        <div class="pyramid-level level-3">
+                                            <span>Compassion & Justice</span>
+                                        </div>
+                                        <div class="pyramid-level level-4">
+                                            <span>Wisdom & Knowledge</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="infographic-item" data-type="timeline">
+                                <div class="infographic-visual timeline-visual">
+                                    <div class="visual-timeline">
+                                        <div class="timeline-line"></div>
+                                        <div class="timeline-points" id="timelinePoints">
+                                            <!-- Timeline points will be populated dynamically -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="infographic-item" data-type="teachings">
+                                <div class="infographic-visual teachings-visual">
+                                    <div class="teachings-circle">
+                                        <div class="center-circle">
+                                            <i class="fas fa-heart"></i>
+                                            <span>Core Teachings</span>
+                                        </div>
+                                        <div class="teaching-nodes">
+                                            <div class="node node-1">Faith</div>
+                                            <div class="node node-2">Prayer</div>
+                                            <div class="node node-3">Charity</div>
+                                            <div class="node node-4">Justice</div>
+                                            <div class="node node-5">Compassion</div>
+                                            <div class="node node-6">Wisdom</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="infographic-item" data-type="legacy">
+                                <div class="infographic-visual legacy-visual">
+                                    <div class="legacy-tree">
+                                        <div class="tree-crown">
+                                            <div class="impact-bubble">Spiritual Guidance</div>
+                                            <div class="impact-bubble">Moral Values</div>
+                                            <div class="impact-bubble">Social Justice</div>
+                                        </div>
+                                        <div class="tree-trunk">
+                                            <span>Eternal Legacy</span>
+                                        </div>
+                                        <div class="tree-roots">
+                                            <span>Lives Transformed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 👆 NEW: Infographic Section End 👆 -->
+            
+
+
+                    <!-- YouTube Video Section -->
+                    <div class="content-card video-card">
+                        <div class="card-header">
+                            <i class="fab fa-youtube"></i>
+                            <h3>Watch & Learn</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="video-placeholder" id="wisdomVideoContainer">
+                                <div class="video-thumbnail">
+                                    <i class="fab fa-youtube"></i>
+                                    <p>Wisdom video will be loaded here</p>
+                                </div>
+                                <iframe id="wisdomYoutubeVideo" width="100%" height="315" src="" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen style="display: none;">
+                                </iframe>
+                            </div>
+                            <div class="video-info">
+                                <h4 id="wisdomVideoTitle">Wisdom in Daily Life</h4>
+                                <p id="wisdomVideoDescription">Learn how to apply prophetic wisdom in modern
+                                    situations...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salah Section -->
+<div class="section" id="salahSection">
+    <div class="premium-section">
+        <!-- Back Button -->
+        <button class="back-btn" id="backToHomeFromSalah">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </button>
+        
+        <div class="luxury-header">
+            <div class="header-ornament">
+                <i class="fas fa-pray"></i>
+            </div>
+            <h1 class="luxury-title">
+                <span class="title-line-1">Correct Your</span>
+                <span class="title-line-2">Salah</span>
+            </h1>
+            <div class="subtitle-container">
+                <div class="subtitle-line"></div>
+                <p class="luxury-subtitle">Complete guide to Islamic prayers</p>
+                <div class="subtitle-line"></div>
+            </div>
+        </div>
+        
+        <div class="salah-categories">
+            <!-- Daily Prayers Section -->
+            <div class="prayer-category">
+                <h3 class="category-title">
+                    <i class="fas fa-sun"></i>
+                    Daily Prayers (Fard Salah)
+                </h3>
+                <div class="compact-salah-grid">
+                    <div class="compact-salah-card" data-prayer="fajr" data-color="#FFD700">
+                        <span>Fajr</span>
+                        <small>2 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="dhuhr" data-color="#4169E1">
+                        <span>Dhuhr</span>
+                        <small>4 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="asr" data-color="#FF6347">
+                        <span>Asr</span>
+                        <small>4 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="maghrib" data-color="#9370DB">
+                        <span>Maghrib</span>
+                        <small>3 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="isha" data-color="#20B2AA">
+                        <span>Isha</span>
+                        <small>4 Rakat</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Special Event Prayers -->
+            <div class="prayer-category">
+                <h3 class="category-title">
+                    <i class="fas fa-star-and-crescent"></i>
+                    Special Event Prayers
+                </h3>
+                <div class="compact-salah-grid">
+                    <div class="compact-salah-card" data-prayer="eid-fitr" data-color="#00B04F">
+                        <span>Eid ul Fitr</span>
+                        <small>2 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="eid-adha" data-color="#8B4513">
+                        <span>Eid ul Adha</span>
+                        <small>2 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="tarawih" data-color="#32CD32">
+                        <span>Tarawih</span>
+                        <small>8-20 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="shabe-barat" data-color="#DDA0DD">
+                        <span>Shab e Barat</span>
+                        <small>Variable</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="shabe-qadr" data-color="#F0E68C">
+                        <span>Shab e Qadr</span>
+                        <small>Variable</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sunnah & Nafl Prayers -->
+            <div class="prayer-category">
+                <h3 class="category-title">
+                    <i class="fas fa-hands-praying"></i>
+                    Sunnah & Nafl Prayers
+                </h3>
+                <div class="compact-salah-grid">
+                    <div class="compact-salah-card" data-prayer="tahajjud" data-color="#FF1493">
+                        <span>Tahajjud</span>
+                        <small>2-12 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="istikhara" data-color="#87CEEB">
+                        <span>Istikhara</span>
+                        <small>2 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="hajat" data-color="#FFA07A">
+                        <span>Salatul Hajat</span>
+                        <small>2 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="tawbah" data-color="#98FB98">
+                        <span>Salatul Tawbah</span>
+                        <small>2 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="tasbih" data-color="#F5DEB3">
+                        <span>Salatul Tasbih</span>
+                        <small>4 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="duha" data-color="#FFB6C1">
+                        <span>Duha</span>
+                        <small>2-8 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="awabeen" data-color="#AFEEEE">
+                        <span>Awabeen</span>
+                        <small>6 Rakat</small>
+                    </div>
+                    <div class="compact-salah-card" data-prayer="ishraq" data-color="#E6E6FA">
+                        <span>Ishraq</span>
+                        <small>2-4 Rakat</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Salah Detail Section -->
+<div class="section" id="salahDetailSection">
+    <div class="salah-detail-container">
+        <!-- Back Button -->
+        <button class="back-btn" id="backToSalah">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Prayers</span>
+        </button>
+        
+        <!-- Prayer Header -->
+        <div class="salah-detail-header">
+            <div class="salah-icon" id="salahIcon">
+                <i class="fas fa-pray"></i>
+            </div>
+            <h1 class="salah-title" id="salahTitle">Fajr Prayer</h1>
+            <p class="salah-subtitle" id="salahSubtitle">The Dawn Prayer - 2 Rakat</p>
+        </div>
+        
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="arabic">عربي</button>
+            <button class="lang-btn" data-lang="english">English</button>
+            <button class="lang-btn" data-lang="hindi">हिंदी</button>
+            <button class="lang-btn" data-lang="bengali">বাংলা</button>
+        </div>
+        
+        <!-- Content Grid -->
+        <div class="salah-content-grid">
+            <!-- Prayer Description -->
+            <div class="content-card description-card">
+                <div class="card-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Prayer Description</h3>
+                </div>
+                <div class="card-content">
+                    <div class="prayer-description" id="prayerDescription">
+                        Prayer description will be displayed here...
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Prayer Method -->
+            <div class="content-card method-card">
+                <div class="card-header">
+                    <i class="fas fa-list-ol"></i>
+                    <h3>Prayer Method</h3>
+                </div>
+                <div class="card-content">
+                    <div class="prayer-method" id="prayerMethod">
+                        Step by step method will be displayed here...
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Duas & Supplications -->
+            <div class="content-card duas-card">
+                <div class="card-header">
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Duas & Supplications</h3>
+                </div>
+                <div class="card-content">
+                    <div class="duas-list" id="prayerDuas">
+                        <!-- Duas will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Surahs to Recite -->
+            <div class="content-card surahs-card">
+                <div class="card-header">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Recommended Surahs</h3>
+                </div>
+                <div class="card-content">
+                    <div class="surahs-list" id="prayerSurahs">
+                        <!-- Surahs will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tasbih & Dhikr -->
+            <div class="content-card tasbih-card">
+                <div class="card-header">
+                    <i class="fas fa-circle-notch"></i>
+                    <h3>Tasbih & Dhikr</h3>
+                </div>
+                <div class="card-content">
+                    <div class="tasbih-list" id="prayerTasbih">
+                        <!-- Tasbih will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefits & Virtues -->
+            <div class="content-card benefits-card">
+                <div class="card-header">
+                    <i class="fas fa-star"></i>
+                    <h3>Benefits & Virtues</h3>
+                </div>
+                <div class="card-content">
+                    <div class="benefits-list" id="prayerBenefits">
+                        <!-- Benefits will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Daily Reflection Section -->
+<div class="section" id="reflectionSection">
+    <div class="premium-section">
+        <!-- Back Button -->
+        <button class="back-btn" id="backToHomeFromReflection">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </button>
+        
+        <div class="luxury-header">
+            <div class="header-ornament">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1 class="luxury-title">
+                <span class="title-line-1">Daily</span>
+                <span class="title-line-2">Reflection</span>
+            </h1>
+            <div class="subtitle-container">
+                <div class="subtitle-line"></div>
+                <p class="luxury-subtitle">Islamic guidance for daily life</p>
+                <div class="subtitle-line"></div>
+            </div>
+        </div>
+        
+        <div class="reflection-categories">
+            <!-- Morning Routine -->
+            <div class="reflection-category">
+                <h3 class="category-title">
+                    <i class="fas fa-sun"></i>
+                    Morning Routine
+                </h3>
+                <div class="compact-reflection-grid">
+                    <div class="compact-reflection-card" data-reflection="waking-up" data-color="#FFD700">
+                        <span>Waking Up</span>
+                        <small>First Dua</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="bathroom-etiquette" data-color="#4169E1">
+                        <span>Bathroom</span>
+                        <small>Etiquette</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="wudu-method" data-color="#32CD32">
+                        <span>Wudu</span>
+                        <small>Method</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="ghusl-method" data-color="#FF6347">
+                        <span>Ghusl</span>
+                        <small>Method</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Daily Activities -->
+            <div class="reflection-category">
+                <h3 class="category-title">
+                    <i class="fas fa-clock"></i>
+                    Daily Activities
+                </h3>
+                <div class="compact-reflection-grid">
+                    <div class="compact-reflection-card" data-reflection="eating-etiquette" data-color="#9370DB">
+                        <span>Eating</span>
+                        <small>Etiquette</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="drinking-etiquette" data-color="#20B2AA">
+                        <span>Drinking</span>
+                        <small>Etiquette</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="dressing-etiquette" data-color="#DDA0DD">
+                        <span>Dressing</span>
+                        <small>Etiquette</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="traveling-etiquette" data-color="#F0E68C">
+                        <span>Traveling</span>
+                        <small>Etiquette</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Interactions -->
+            <div class="reflection-category">
+                <h3 class="category-title">
+                    <i class="fas fa-users"></i>
+                    Social Interactions
+                </h3>
+                <div class="compact-reflection-grid">
+                    <div class="compact-reflection-card" data-reflection="greeting-etiquette" data-color="#FF1493">
+                        <span>Greeting</span>
+                        <small>Salam</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="speaking-etiquette" data-color="#87CEEB">
+                        <span>Speaking</span>
+                        <small>Etiquette</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="business-etiquette" data-color="#FFA07A">
+                        <span>Business</span>
+                        <small>Ethics</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="family-etiquette" data-color="#98FB98">
+                        <span>Family</span>
+                        <small>Relations</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Evening Routine -->
+            <div class="reflection-category">
+                <h3 class="category-title">
+                    <i class="fas fa-moon"></i>
+                    Evening Routine
+                </h3>
+                <div class="compact-reflection-grid">
+                    <div class="compact-reflection-card" data-reflection="evening-dhikr" data-color="#F5DEB3">
+                        <span>Evening</span>
+                        <small>Dhikr</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="sleeping-etiquette" data-color="#FFB6C1">
+                        <span>Sleeping</span>
+                        <small>Etiquette</small>
+                    </div>
+                    <div class="compact-reflection-card" data-reflection="night-worship" data-color="#AFEEEE">
+                        <span>Night</span>
+                        <small>Worship</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reflection Detail Section -->
+<div class="section" id="reflectionDetailSection">
+    <div class="reflection-detail-container">
+        <!-- Back Button -->
+        <button class="back-btn" id="backToReflection">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Reflections</span>
+        </button>
+        
+        <!-- Today's Date -->
+        <div class="reflection-date">
+            <h2 id="todayDate">Today's Reflection</h2>
+        </div>
+        
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="arabic">عربي</button>
+            <button class="lang-btn" data-lang="english">English</button>
+            <button class="lang-btn" data-lang="hindi">हिंदी</button>
+            <button class="lang-btn" data-lang="bengali">বাংলা</button>
+        </div>
+        
+        <!-- Reflection Header -->
+        <div class="reflection-detail-header">
+            <div class="reflection-icon" id="reflectionIcon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1 class="reflection-title" id="reflectionTitle">Waking Up</h1>
+            <p class="reflection-subtitle" id="reflectionSubtitle">Islamic Etiquette for Starting Your Day</p>
+        </div>
+        
+        <!-- Content Grid -->
+        <div class="reflection-content-grid">
+            <!-- Verse/Hadith of the Day -->
+            <div class="content-card verse-card">
+                <div class="card-header">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Verse/Hadith of the Day</h3>
+                </div>
+                <div class="card-content">
+                    <div class="verse-content" id="verseContent">
+                        <!-- Verse/Hadith will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Explanation -->
+            <div class="content-card explanation-card">
+                <div class="card-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Explanation</h3>
+                </div>
+                <div class="card-content">
+                    <div class="explanation-content" id="explanationContent">
+                        <!-- Explanation will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Key Lesson -->
+            <div class="content-card lesson-card">
+                <div class="card-header">
+                    <i class="fas fa-star"></i>
+                    <h3>Key Lesson</h3>
+                </div>
+                <div class="card-content">
+                    <div class="lesson-content" id="lessonContent">
+                        <!-- Lesson will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Step -->
+            <div class="content-card action-card">
+                <div class="card-header">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Today's Action</h3>
+                </div>
+                <div class="card-content">
+                    <div class="action-content" id="actionContent">
+                        <!-- Action step will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Halal/Haram Guidelines -->
+            <div class="content-card guidelines-card">
+                <div class="card-header">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Halal/Haram Guidelines</h3>
+                </div>
+                <div class="card-content">
+                    <div class="guidelines-content" id="guidelinesContent">
+                        <!-- Guidelines will be populated here -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Islamic Calligraphy -->
+            <div class="content-card calligraphy-card">
+                <div class="card-header">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Islamic Calligraphy</h3>
+                </div>
+                <div class="card-content">
+                    <div class="calligraphy-content" id="calligraphyContent">
+                        <!-- Calligraphy will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <!-- Refined Footer Section -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <h3>Islamic Pearls</h3>
+                    <p>Discover wisdom, find peace, embrace faith</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#mood">What's Your Mood</a></li>
+                            <li><a href="#prophets">Prophet Stories</a></li>
+                            <li><a href="#quran">Quran Verses</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#daily-ayah">Daily Ayah</a></li>
+                            <li><a href="#spiritual-guidance">Guidance</a></li>
+                            <li><a href="#islamic-wisdom">Wisdom</a></li>
+                            <li><a href="#reflection">Reflection</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h4>Connect With Us</h4>
+                    <ul class="animated-social-links">
+                        <li class="icon-content">
+                            <a data-social="instagram" aria-label="Instagram"
+                                href="https://instagram.com/sheikh_sohail007" target="_blank">
+                                <div class="filled"></div>
+                                <svg xml:space="preserve" viewBox="0 0 16 16" class="bi bi-instagram"
+                                    fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor"
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">Instagram</div>
+                        </li>
+
+                        <li class="icon-content">
+                            <a data-social="instagram" aria-label="Instagram" href="https://instagram.com/honeyesticx"
+                                target="_blank">
+                                <div class="filled"></div>
+                                <svg xml:space="preserve" viewBox="0 0 16 16" class="bi bi-instagram"
+                                    fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor"
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">Instagram</div>
+                        </li>
+
+                        <li class="icon-content">
+                            <a data-social="twitter" aria-label="Twitter" href="https://twitter.com/shiekhsohail678"
+                                target="_blank">
+                                <div class="filled"></div>
+                                <svg xml:space="preserve" viewBox="0 0 16 16" class="bi bi-twitter" fill="currentColor"
+                                    height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor"
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">Twitter</div>
+                        </li>
+
+                        <li class="icon-content">
+                            <a data-social="github" aria-label="GitHub" href="https://github.com/sheikhsohail007"
+                                target="_blank">
+                                <div class="filled"></div>
+                                <svg xml:space="preserve" viewBox="0 0 16 16" class="bi bi-github" fill="currentColor"
+                                    height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor"
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">GitHub</div>
+                        </li>
+                    </ul>
+
+                    <div class="newsletter">
+                        <h5>Stay Updated</h5>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input">
+                            <button class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider">
+                <div class="ornamental-line">
+                    <div class="line"></div>
+                    <i class="fas fa-star"></i>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Islamic Pearls | All rights reserved | created by Sheikh</p>
+                    
+                </div>
+
+                <div class="footer-meta">
+                    <div class="legal-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <span class="separator">•</span>
+                        <a href="#terms">Terms of Service</a>
+                        <span class="separator">•</span>
+                        <a href="#cookies">Cookie Policy</a>
+                    </div>
+
+                    <div class="developer-credit">
+                        <p>
+                            Developed with <i class="fas fa-heart" style="color: #ff6b9d;"></i>
+                            for the Muslim Ummah
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Top Button -->
+            <button class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+    <!-- Add this modal for better user name input (optional) -->
+    <div class="user-setup-modal" id="userSetupModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-user-circle"></i>
+                <h3>Welcome to Comments</h3>
+            </div>
+            <div class="modal-body">
+                <p>Please enter your name to participate in discussions:</p>
+                <input type="text" id="userNameInput" placeholder="Enter your name" maxlength="50">
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn" id="saveUserName">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
